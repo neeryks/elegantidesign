@@ -1123,16 +1123,46 @@ spaces globally." name="description"/>
 <button class="submit-btn" type="submit">Send</button>
 </form>
 <style>
-        .custom-form { max-width: 100%; margin: 0 auto; font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif; }
-        .form-group { margin-bottom: 20px; }
-        .form-group label { display: block; margin-bottom: 8px; font-weight: 500; color: #333; }
-        .form-control { width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 0; box-sizing: border-box; background: #fafafa; }
-        .form-control:focus { border-color: #333; outline: none; background: #fff; }
-        .submit-btn { background-color: #000; color: white; padding: 14px 24px; border: none; border-radius: 0; cursor: pointer; font-size: 14px; text-transform: uppercase; letter-spacing: 1px; transition: background 0.2s; }
-        .submit-btn:hover { background-color: #333; }
-        .radio-option, .checkbox-option { margin-bottom: 8px; display: flex; align-items: center; }
-        .radio-option input, .checkbox-option input { margin-right: 10px; }
-        .radio-group, .checkbox-group { margin-top: 5px; }
+        .custom-form { max-width: 100%; margin: 0 auto; font-family: inherit; }
+        .form-group { margin-bottom: 25px; }
+        .form-group label { display: block; margin-bottom: 10px; font-weight: 500; color: inherit; font-size: 0.9rem; letter-spacing: 0.02em; }
+        .form-control { 
+            width: 100%; 
+            padding: 18px 25px; 
+            border: none; 
+            border-radius: 300px; /* Pill shape */
+            box-sizing: border-box; 
+            background: rgba(0, 0, 0, 0.04); /* Solid style */
+            font-family: inherit;
+            font-size: 1rem;
+            color: #333;
+        }
+        .form-control:focus { 
+            outline: none; 
+            background: rgba(0, 0, 0, 0.07); 
+        }
+        textarea.form-control {
+            border-radius: 25px; /* Softer corners for textarea */
+        }
+        .submit-btn { 
+            background-color: #000; 
+            color: white; 
+            padding: 18px 38px; 
+            border: none; 
+            border-radius: 300px; /* Pill shape */
+            cursor: pointer; 
+            font-size: 12px; 
+            font-weight: 600;
+            text-transform: uppercase; 
+            letter-spacing: 0.15em; 
+            transition: opacity 0.2s; 
+            display: block;
+            margin-top: 30px;
+        }
+        .submit-btn:hover { opacity: 0.8; }
+        .radio-option, .checkbox-option { margin-bottom: 10px; display: flex; align-items: center; font-size: 0.95rem; }
+        .radio-option input, .checkbox-option input { margin-right: 12px; accent-color: #000; }
+        .radio-group, .checkbox-group { margin-top: 8px; }
     </style>
 </div>
 </div></div></div></div></div></div>
