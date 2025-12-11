@@ -1,42 +1,71 @@
-document.addEventListener('DOMContentLoaded', function() {
+window.addEventListener('load', function() {
+    // Run after a short delay to ensure Squarespace scripts have finished
+    setTimeout(initCustomSlider, 500);
+});
+
+function initCustomSlider() {
+    console.log('Initializing Custom Slider...');
     const sliders = document.querySelectorAll('.sqs-gallery-block-slider .sqs-gallery');
 
-    sliders.forEach(slider => {
-        console.log('Initializing slider', slider);
-        // Find all images that are meant to be slides
-        // We look for img.thumb-image. 
-        // Note: The HTML might contain noscript tags which we should ignore.
-        const images = Array.from(slider.querySelectorAll('img.thumb-image'));
+    if (sliders.length === 0) {
+        console.warn('No sliders found matching .sqs-gallery-block-slider .sqs-gallery');
+        return;
+    }
+
+    sliders.forEach((slider, index) => {
+        console.log(`Processing slider ${index + 1}`);
         
-        if (images.length === 0) return;
+        // Find all images. We look for img tags that are NOT inside noscript.
+        // We also filter out any that might be hidden or 0x0 if possible, but mostly we just want the source images.
+        // Squarespace might have duplicated them or wrapped them.
+        // Let's look for the original images we modified.
+        let images = Array.from(slider.querySelectorAll('img'));
+        
+        // Filter out noscript images just in case querySelectorAll picked them up (it shouldn't, but good to be safe)
+        images = images.filter(img => !img.closest('noscript'));
+
+        if (images.length === 0) {
+            console.warn('No images found in slider');
+            return;
+        }
+
+        console.log(`Found ${images.length} images`);
 
         // Create a track container
         const track = document.createElement('div');
         track.className = 'custom-slider-track';
         
-        // Move images into the track, wrapped in slide divs
+        // Move images into the track
         images.forEach(img => {
             const slide = document.createElement('div');
             slide.className = 'custom-slide';
             
-            // Clone the image to avoid issues with existing event listeners or weird state, 
-            // though moving the element is usually fine. 
-            // Let's just move the element.
-            // We also need to ensure the image is visible.
+            // Clean up image attributes
+            img.removeAttribute('data-load');
+            img.removeAttribute('data-src');
+            img.removeAttribute('srcset'); // Remove srcset to force src usage
+            img.removeAttribute('style'); // Remove inline styles from Squarespace
+            
+            // Force styles
             img.style.display = 'block';
             img.style.width = '100%';
             img.style.height = '100%';
             img.style.objectFit = 'cover';
-            img.removeAttribute('data-load');
-            img.removeAttribute('data-src');
+            img.style.opacity = '1';
+            img.style.visibility = 'visible';
             
             slide.appendChild(img);
             track.appendChild(slide);
         });
 
-        // Clear the slider container (removes noscripts and old text nodes)
+        // Clear the slider container completely
         slider.innerHTML = '';
         slider.appendChild(track);
+        
+        // Force slider styles
+        slider.style.opacity = '1';
+        slider.style.visibility = 'visible';
+        slider.style.height = '100%'; // Ensure it fills the container
 
         // State
         let currentIndex = 0;
@@ -55,6 +84,8 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         // Start auto-play
-        setInterval(nextSlide, intervalTime);
+        if (totalSlides > 1) {
+            setInterval(nextSlide, intervalTime);
+        }
     });
-});
+}

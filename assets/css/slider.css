@@ -4,18 +4,16 @@
     padding-bottom: 50%; /* Aspect ratio 50 */
     height: 0;
     position: relative;
+    overflow: hidden; /* Ensure content doesn't spill out */
 }
 
 .sqs-gallery-block-slider .sqs-gallery {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-    /* Ensure the gallery takes up the full height of its container, 
-       which usually has an aspect-ratio padding hack in Squarespace */
     position: absolute; 
     top: 0;
     left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
     opacity: 1 !important;
     visibility: visible !important;
     z-index: 1;
