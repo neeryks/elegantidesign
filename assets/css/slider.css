@@ -37,6 +37,7 @@
     height: 100%;
     flex-shrink: 0;
     background-color: #f0f0f0; /* Debug background */
+    position: relative; /* Ensure z-index works if needed */
 }
 
 .custom-slide img {
