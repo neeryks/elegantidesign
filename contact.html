@@ -885,138 +885,116 @@
   </script>
 <div class="sqs-form-block-submission-html" data-submission-html="" id="form-submission-html-680ff6ec169c2b16cadc078b"></div><style></style>
 <div class="form-wrapper"><form action="https://formsubmit.co/akashdeep.singh49@gmail.com" class="custom-form" method="POST">
-<input name="_subject" type="hidden" value="New submission from Contact Us Page"/>
+<input name="_subject" type="hidden" value="New submission from Contact Page"/>
+
 <div class="form-group">
-<label for="name-yui_3_17_2_1_1656615088309_7771">Name *</label>
-<input class="form-control" id="name-yui_3_17_2_1_1656615088309_7771" name="name" required="" type="text"/>
+<label class="main-label">Name <span class="required">(required)</span></label>
+<div class="name-row">
+<div class="name-col">
+<input class="form-control" name="first_name" required="" type="text"/>
+<label class="sub-label">First Name</label>
 </div>
-<div class="form-group">
-<label for="email-yui_3_17_2_1_1656615088309_7772">Email *</label>
-<input class="form-control" id="email-yui_3_17_2_1_1656615088309_7772" name="email" required="" type="email"/>
+<div class="name-col">
+<input class="form-control" name="last_name" required="" type="text"/>
+<label class="sub-label">Last Name</label>
 </div>
-<div class="form-group">
-<label for="textarea-yui_3_17_2_1_1656615088309_7774">Message *</label>
-<textarea class="form-control" id="textarea-yui_3_17_2_1_1656615088309_7774" name="message" required="" rows="4"></textarea>
 </div>
-<div class="form-group">
-<label for="phone-efb5b212-3ac3-499c-a198-481f949a311e">Phone</label>
-<input class="form-control" id="phone-efb5b212-3ac3-499c-a198-481f949a311e" name="phone" type="tel"/>
 </div>
+
 <div class="form-group">
-<label for="radio-8eeabef0-ced7-411e-9fa4-94a4fc629c01">Type of Project:</label>
+<label class="main-label">Email <span class="required">(required)</span></label>
+<input class="form-control" name="email" required="" type="email"/>
+</div>
+
+<div class="form-group">
+<label class="main-label">Message <span class="required">(required)</span></label>
+<textarea class="form-control" name="message" required="" rows="4"></textarea>
+</div>
+
+<div class="form-group">
+<label class="main-label">Phone</label>
+<input class="form-control" name="phone" type="tel"/>
+</div>
+
+<div class="form-group">
+<label class="main-label">Type of Project:</label>
 <div class="radio-group">
-<div class="radio-option">
-<input id="radio-8eeabef0-ced7-411e-9fa4-94a4fc629c01_0" name="Type of Project:" type="radio" value="Residential"/>
-<label for="radio-8eeabef0-ced7-411e-9fa4-94a4fc629c01_0">Residential</label>
-</div>
-<div class="radio-option">
-<input id="radio-8eeabef0-ced7-411e-9fa4-94a4fc629c01_1" name="Type of Project:" type="radio" value="New Build &amp; Interiors"/>
-<label for="radio-8eeabef0-ced7-411e-9fa4-94a4fc629c01_1">New Build &amp; Interiors</label>
-</div>
-<div class="radio-option">
-<input id="radio-8eeabef0-ced7-411e-9fa4-94a4fc629c01_2" name="Type of Project:" type="radio" value="Renovations &amp; Interior"/>
-<label for="radio-8eeabef0-ced7-411e-9fa4-94a4fc629c01_2">Renovations &amp; Interior</label>
-</div>
-<div class="radio-option">
-<input id="radio-8eeabef0-ced7-411e-9fa4-94a4fc629c01_3" name="Type of Project:" type="radio" value="Commercial Space"/>
-<label for="radio-8eeabef0-ced7-411e-9fa4-94a4fc629c01_3">Commercial Space</label>
-</div>
-<div class="radio-option">
-<input id="radio-8eeabef0-ced7-411e-9fa4-94a4fc629c01_4" name="Type of Project:" type="radio" value="Furnishings / Interior Styling Only"/>
-<label for="radio-8eeabef0-ced7-411e-9fa4-94a4fc629c01_4">Furnishings / Interior Styling Only</label>
-</div>
-<div class="radio-option">
-<input id="radio-8eeabef0-ced7-411e-9fa4-94a4fc629c01_5" name="Type of Project:" type="radio" value="Design Studio Support"/>
-<label for="radio-8eeabef0-ced7-411e-9fa4-94a4fc629c01_5">Design Studio Support</label>
-</div>
-<div class="radio-option">
-<input id="radio-8eeabef0-ced7-411e-9fa4-94a4fc629c01_6" name="Type of Project:" type="radio" value="Other"/>
-<label for="radio-8eeabef0-ced7-411e-9fa4-94a4fc629c01_6">Other</label>
+<label class="radio-option"><input name="project_type" type="radio" value="Residential New Build &amp; Interiors"/> Residential New Build &amp; Interiors</label>
+<label class="radio-option"><input name="project_type" type="radio" value="Renovations &amp; Interior"/> Renovations &amp; Interior</label>
+<label class="radio-option"><input name="project_type" type="radio" value="Commercial Space"/> Commercial Space</label>
+<label class="radio-option"><input name="project_type" type="radio" value="Furnishings / Interior Styling Only"/> Furnishings / Interior Styling Only</label>
+<label class="radio-option"><input name="project_type" type="radio" value="Design Studio Support"/> Design Studio Support</label>
+<label class="radio-option"><input name="project_type" type="radio" value="Other"/> Other</label>
 </div>
 </div>
-</div>
+
 <div class="form-group">
-<label for="currency-61067ff4-e08a-400a-885d-234247fda498">Estimated Budget</label>
-<input class="form-control" id="currency-61067ff4-e08a-400a-885d-234247fda498" name="Estimated Budget" step="0.01" type="number"/>
+<label class="main-label">Estimated Budget <span class="sub-text">(Build and / or Furnishing Decor Budget)</span></label>
+<input class="form-control" name="budget" placeholder="$" type="text"/>
 </div>
+
 <div class="form-group">
-<label for="checkbox-5eaeb784-bc62-4f28-b738-aae7d0e91b6a">Spaces of the project</label>
+<label class="main-label">Spaces of the project <span class="sub-text">(Select all that apply)</span></label>
 <div class="checkbox-group">
-<div class="checkbox-option">
-<input id="checkbox-5eaeb784-bc62-4f28-b738-aae7d0e91b6a_0" name="Spaces of the project" type="checkbox" value="Living Room"/>
-<label for="checkbox-5eaeb784-bc62-4f28-b738-aae7d0e91b6a_0">Living Room</label>
-</div>
-<div class="checkbox-option">
-<input id="checkbox-5eaeb784-bc62-4f28-b738-aae7d0e91b6a_1" name="Spaces of the project" type="checkbox" value="Kitchen"/>
-<label for="checkbox-5eaeb784-bc62-4f28-b738-aae7d0e91b6a_1">Kitchen</label>
-</div>
-<div class="checkbox-option">
-<input id="checkbox-5eaeb784-bc62-4f28-b738-aae7d0e91b6a_2" name="Spaces of the project" type="checkbox" value="Master Bedroom"/>
-<label for="checkbox-5eaeb784-bc62-4f28-b738-aae7d0e91b6a_2">Master Bedroom</label>
-</div>
-<div class="checkbox-option">
-<input id="checkbox-5eaeb784-bc62-4f28-b738-aae7d0e91b6a_3" name="Spaces of the project" type="checkbox" value="Bedroom(s)"/>
-<label for="checkbox-5eaeb784-bc62-4f28-b738-aae7d0e91b6a_3">Bedroom(s)</label>
-</div>
-<div class="checkbox-option">
-<input id="checkbox-5eaeb784-bc62-4f28-b738-aae7d0e91b6a_4" name="Spaces of the project" type="checkbox" value="Baby / children Bedroom(s)"/>
-<label for="checkbox-5eaeb784-bc62-4f28-b738-aae7d0e91b6a_4">Baby / children Bedroom(s)</label>
-</div>
-<div class="checkbox-option">
-<input id="checkbox-5eaeb784-bc62-4f28-b738-aae7d0e91b6a_5" name="Spaces of the project" type="checkbox" value="Bathroom(s)"/>
-<label for="checkbox-5eaeb784-bc62-4f28-b738-aae7d0e91b6a_5">Bathroom(s)</label>
-</div>
-<div class="checkbox-option">
-<input id="checkbox-5eaeb784-bc62-4f28-b738-aae7d0e91b6a_6" name="Spaces of the project" type="checkbox" value="Dining Area"/>
-<label for="checkbox-5eaeb784-bc62-4f28-b738-aae7d0e91b6a_6">Dining Area</label>
-</div>
-<div class="checkbox-option">
-<input id="checkbox-5eaeb784-bc62-4f28-b738-aae7d0e91b6a_7" name="Spaces of the project" type="checkbox" value="Foyer"/>
-<label for="checkbox-5eaeb784-bc62-4f28-b738-aae7d0e91b6a_7">Foyer</label>
-</div>
-<div class="checkbox-option">
-<input id="checkbox-5eaeb784-bc62-4f28-b738-aae7d0e91b6a_8" name="Spaces of the project" type="checkbox" value="Patio / Outdoor Deck"/>
-<label for="checkbox-5eaeb784-bc62-4f28-b738-aae7d0e91b6a_8">Patio / Outdoor Deck</label>
-</div>
-<div class="checkbox-option">
-<input id="checkbox-5eaeb784-bc62-4f28-b738-aae7d0e91b6a_9" name="Spaces of the project" type="checkbox" value="Other"/>
-<label for="checkbox-5eaeb784-bc62-4f28-b738-aae7d0e91b6a_9">Other</label>
+<label class="checkbox-option"><input name="spaces" type="checkbox" value="Living Room"/> Living Room</label>
+<label class="checkbox-option"><input name="spaces" type="checkbox" value="Kitchen"/> Kitchen</label>
+<label class="checkbox-option"><input name="spaces" type="checkbox" value="Master Bedroom"/> Master Bedroom</label>
+<label class="checkbox-option"><input name="spaces" type="checkbox" value="Bedroom(s)"/> Bedroom(s)</label>
+<label class="checkbox-option"><input name="spaces" type="checkbox" value="Baby / children Bedroom(s)"/> Baby / children Bedroom(s)</label>
+<label class="checkbox-option"><input name="spaces" type="checkbox" value="Bathroom(s)"/> Bathroom(s)</label>
+<label class="checkbox-option"><input name="spaces" type="checkbox" value="Dining Area"/> Dining Area</label>
+<label class="checkbox-option"><input name="spaces" type="checkbox" value="Foyer"/> Foyer</label>
+<label class="checkbox-option"><input name="spaces" type="checkbox" value="Patio / Outdoor Deck"/> Patio / Outdoor Deck</label>
+<label class="checkbox-option"><input name="spaces" type="checkbox" value="Other"/> Other</label>
 </div>
 </div>
-</div>
-<button class="submit-btn" type="submit">Send</button>
+
+<button class="submit-btn" type="submit">SEND</button>
 </form>
 <style>
-        .custom-form { max-width: 100%; margin: 0 auto; font-family: inherit; }
+        .custom-form { max-width: 100%; margin: 0 auto; font-family: "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif; }
         .form-group { margin-bottom: 25px; }
-        .form-group label { display: block; margin-bottom: 10px; font-weight: 500; color: inherit; font-size: 0.9rem; letter-spacing: 0.02em; }
+        .main-label { display: block; margin-bottom: 8px; font-weight: 600; color: #000; font-size: 0.9rem; letter-spacing: 0.02em; }
+        .required { font-weight: 400; color: #666; font-size: 0.85rem; }
+        .sub-text { font-weight: 400; color: #666; font-size: 0.85rem; margin-left: 5px; }
+        
+        .name-row { display: flex; gap: 20px; }
+        .name-col { flex: 1; }
+        .sub-label { display: block; margin-top: 6px; font-size: 0.75rem; color: #666; font-weight: 400; }
+        
         .form-control { 
             width: 100%; 
-            padding: 18px 25px; 
+            padding: 14px 20px; 
             border: none; 
             border-radius: 300px; /* Pill shape */
             box-sizing: border-box; 
-            background: rgba(0, 0, 0, 0.04); /* Solid style */
+            background: #fafafa; /* Very light grey */
             font-family: inherit;
-            font-size: 1rem;
+            font-size: 0.95rem;
             color: #333;
         }
         .form-control:focus { 
             outline: none; 
-            background: rgba(0, 0, 0, 0.07); 
+            background: #f0f0f0; 
         }
         textarea.form-control {
-            border-radius: 25px; /* Softer corners for textarea */
+            border-radius: 20px; /* Softer corners for textarea */
+            resize: vertical;
         }
+        
+        .radio-group, .checkbox-group { display: flex; flex-direction: column; gap: 12px; margin-top: 10px; }
+        .radio-option, .checkbox-option { display: flex; align-items: center; font-size: 0.95rem; cursor: pointer; color: #333; }
+        .radio-option input, .checkbox-option input { margin-right: 12px; accent-color: #000; width: auto; height: auto; }
+        
         .submit-btn { 
             background-color: #000; 
             color: white; 
-            padding: 18px 38px; 
+            padding: 16px 42px; 
             border: none; 
             border-radius: 300px; /* Pill shape */
             cursor: pointer; 
             font-size: 12px; 
-            font-weight: 600;
+            font-weight: 700;
             text-transform: uppercase; 
             letter-spacing: 0.15em; 
             transition: opacity 0.2s; 
@@ -1024,9 +1002,10 @@
             margin-top: 30px;
         }
         .submit-btn:hover { opacity: 0.8; }
-        .radio-option, .checkbox-option { margin-bottom: 10px; display: flex; align-items: center; font-size: 0.95rem; }
-        .radio-option input, .checkbox-option input { margin-right: 12px; accent-color: #000; }
-        .radio-group, .checkbox-group { margin-top: 8px; }
+        
+        @media (max-width: 600px) {
+            .name-row { flex-direction: column; gap: 15px; }
+        }
     </style>
 </div>
 </div></div></div></div><div class="fe-block fe-block-a1f353f5ae8dc5ee0a99"><div class="sqs-block image-block sqs-block-image sqs-stretched" data-aspect-ratio="135.08275375890406" data-block-type="5" data-sqsp-block="image" id="block-a1f353f5ae8dc5ee0a99"><div class="sqs-block-content">

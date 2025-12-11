@@ -3636,7 +3636,7 @@ curated shopping lists, and full-room design plans." name="description"/>
 
 </style><div class="fluid-engine fe-680ff6ec169c2b16cadc07b3"><div class="fe-block fe-block-c34304afb1a091580abc"><div class="sqs-block html-block sqs-block-html" data-blend-mode="NORMAL" data-block-type="2" data-border-radii='{"topLeft":{"unit":"px","value":0.0},"topRight":{"unit":"px","value":0.0},"bottomLeft":{"unit":"px","value":0.0},"bottomRight":{"unit":"px","value":0.0}}' data-sqsp-block="text" id="block-c34304afb1a091580abc"><div class="sqs-block-content">
 <div class="sqs-html-content" data-sqsp-text-block-content="">
-<h1 style="white-space:pre-wrap;">Ready to design a space that feels like <em>you</em>?</h1><p class="" style="white-space:pre-wrap;">Let’s bring your vision to life—virtually, beautifully, and effortlessly.</p>
+<h1 style="white-space:pre-wrap;">Let’s Design Together.</h1><p class="" style="white-space:pre-wrap;">Interested in working together? Share a few details and we’ll be in touch to schedule your complimentary discovery call.</p>
 </div>
 </div></div></div><div class="fe-block fe-block-9ef9b285381baa947c1f"><div class="sqs-block website-component-block sqs-block-website-component sqs-block-form form-block" data-block-css='["https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.form/96daa358-bea3-4d61-baef-05a9a1ff7eac_185/website.components.form.styles.css"]' data-block-scripts='["https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.form/96daa358-bea3-4d61-baef-05a9a1ff7eac_185/website.components.form.visitor.js"]'  data-block-type="1337" data-definition-name="website.components.form" data-sqsp-block="form" id="block-9ef9b285381baa947c1f"><div class="sqs-block-content"><div class="sqs-site-style-form">
 <script class="sqs-form-block-context" id="form-context-680ff6ec169c2b16cadc07b1" type="application/json">
@@ -3650,52 +3650,68 @@ curated shopping lists, and full-room design plans." name="description"/>
   </script>
 <div class="sqs-form-block-submission-html" data-submission-html="" id="form-submission-html-680ff6ec169c2b16cadc07b1"></div><style></style>
 <div class="form-wrapper"><form action="https://formsubmit.co/akashdeep.singh49@gmail.com" class="custom-form" method="POST">
-<input name="_subject" type="hidden" value="New submission from Services Form"/>
+<input name="_subject" type="hidden" value="New submission from Services Page"/>
 <div class="form-group">
-<label for="name-yui_3_17_2_1_1733844208615_1051">Name *</label>
-<input class="form-control" id="name-yui_3_17_2_1_1733844208615_1051" name="name" required="" type="text"/>
+<label class="main-label">Name <span class="required">(required)</span></label>
+<div class="name-row">
+<div class="name-col">
+<input class="form-control" name="first_name" required="" type="text"/>
+<label class="sub-label">First Name</label>
+</div>
+<div class="name-col">
+<input class="form-control" name="last_name" required="" type="text"/>
+<label class="sub-label">Last Name</label>
+</div>
+</div>
 </div>
 <div class="form-group">
-<label for="email-yui_3_17_2_1_1733844411045_5358">Email *</label>
-<input class="form-control" id="email-yui_3_17_2_1_1733844411045_5358" name="email" required="" type="email"/>
+<label class="main-label" for="email-600891">Email <span class="required">(required)</span></label>
+<input class="form-control" id="email-600891" name="email" required="" type="email"/>
 </div>
 <div class="form-group">
-<label for="textarea-yui_3_17_2_1_1733844411045_5360">Message *</label>
-<textarea class="form-control" id="textarea-yui_3_17_2_1_1733844411045_5360" name="message" required="" rows="4"></textarea>
+<label class="main-label" for="textarea-600891">Message <span class="required">(required)</span></label>
+<textarea class="form-control" id="textarea-600891" name="message" required="" rows="4"></textarea>
 </div>
-<button class="submit-btn" type="submit">Send</button>
+<button class="submit-btn" type="submit">SEND</button>
 </form>
 <style>
-        .custom-form { max-width: 100%; margin: 0 auto; font-family: inherit; }
+        .custom-form { max-width: 100%; margin: 0 auto; font-family: "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif; }
         .form-group { margin-bottom: 25px; }
-        .form-group label { display: block; margin-bottom: 10px; font-weight: 500; color: inherit; font-size: 0.9rem; letter-spacing: 0.02em; }
+        .main-label { display: block; margin-bottom: 8px; font-weight: 600; color: #000; font-size: 0.9rem; letter-spacing: 0.02em; }
+        .required { font-weight: 400; color: #666; font-size: 0.85rem; }
+        
+        .name-row { display: flex; gap: 20px; }
+        .name-col { flex: 1; }
+        .sub-label { display: block; margin-top: 6px; font-size: 0.75rem; color: #666; font-weight: 400; }
+        
         .form-control { 
             width: 100%; 
-            padding: 18px 25px; 
+            padding: 14px 20px; 
             border: none; 
             border-radius: 300px; /* Pill shape */
             box-sizing: border-box; 
-            background: rgba(0, 0, 0, 0.04); /* Solid style */
+            background: #fafafa; /* Very light grey */
             font-family: inherit;
-            font-size: 1rem;
+            font-size: 0.95rem;
             color: #333;
         }
         .form-control:focus { 
             outline: none; 
-            background: rgba(0, 0, 0, 0.07); 
+            background: #f0f0f0; 
         }
         textarea.form-control {
-            border-radius: 25px; /* Softer corners for textarea */
+            border-radius: 20px; /* Softer corners for textarea */
+            resize: vertical;
         }
         .submit-btn { 
             background-color: #000; 
             color: white; 
-            padding: 18px 38px; 
+            padding: 16px 42px; 
             border: none; 
             border-radius: 300px; /* Pill shape */
             cursor: pointer; 
             font-size: 12px; 
-            font-weight: 600;
+            font-weight: 700;
             text-transform: uppercase; 
             letter-spacing: 0.15em; 
             transition: opacity 0.2s; 
@@ -3703,9 +3719,11 @@ curated shopping lists, and full-room design plans." name="description"/>
             margin-top: 30px;
         }
         .submit-btn:hover { opacity: 0.8; }
-        .radio-option, .checkbox-option { margin-bottom: 10px; display: flex; align-items: center; font-size: 0.95rem; }
-        .radio-option input, .checkbox-option input { margin-right: 12px; accent-color: #000; }
-        .radio-group, .checkbox-group { margin-top: 8px; }
+        
+        /* Mobile responsiveness for name fields */
+        @media (max-width: 600px) {
+            .name-row { flex-direction: column; gap: 15px; }
+        }
     </style>
 </div>
 </div></div></div></div></div></div>
