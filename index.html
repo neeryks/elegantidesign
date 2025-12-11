@@ -7686,28 +7686,91 @@ modern, and elevated spaces—fully online." />
 </div></div></div><div class="fe-block fe-block-98ab511269f4511abcce"><div class="sqs-block html-block sqs-block-html" data-blend-mode="NORMAL" data-block-type="2" data-border-radii="{&quot;topLeft&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0},&quot;topRight&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0},&quot;bottomLeft&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0},&quot;bottomRight&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0}}" data-sqsp-block="html" id="block-98ab511269f4511abcce">
   <div class="sqs-block-content">
     <div class="sqs-html-content">
-      <form action="https://formsubmit.co/akashdeep.singh49@gmail.com" method="POST" style="display: flex; flex-direction: column; gap: 15px; max-width: 600px;">
-        <input type="hidden" name="_subject" value="New Contact from Homepage">
-        <input type="hidden" name="_next" value="https://www.syncdesigngroup.com/index.html">
-        <input type="hidden" name="_captcha" value="false">
+      <div class="form-wrapper">
+        <form action="https://formsubmit.co/akashdeep.singh49@gmail.com" class="custom-form" method="POST">
+          <input name="_subject" type="hidden" value="New Contact from Homepage"/>
+          <input type="hidden" name="_next" value="https://www.syncdesigngroup.com/index.html">
+          <input type="hidden" name="_captcha" value="false">
+          
+          <div class="form-group">
+            <label class="main-label">Name <span class="required">(required)</span></label>
+            <div class="name-row">
+              <div class="name-col">
+                <input class="form-control" name="first_name" required="" type="text"/>
+                <label class="sub-label">First Name</label>
+              </div>
+              <div class="name-col">
+                <input class="form-control" name="last_name" required="" type="text"/>
+                <label class="sub-label">Last Name</label>
+              </div>
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label class="main-label" for="email-home">Email <span class="required">(required)</span></label>
+            <input class="form-control" id="email-home" name="email" required="" type="email"/>
+          </div>
+          
+          <div class="form-group">
+            <label class="main-label" for="textarea-home">Message <span class="required">(required)</span></label>
+            <textarea class="form-control" id="textarea-home" name="message" required="" rows="4"></textarea>
+          </div>
+          
+          <button class="submit-btn" type="submit">SEND</button>
+        </form>
         
-        <div style="display: flex; flex-direction: column;">
-          <label for="name" style="margin-bottom: 5px; font-weight: bold;">Name *</label>
-          <input type="text" id="name" name="name" required style="padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
-        </div>
-
-        <div style="display: flex; flex-direction: column;">
-          <label for="email" style="margin-bottom: 5px; font-weight: bold;">Email *</label>
-          <input type="email" id="email" name="email" required style="padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
-        </div>
-
-        <div style="display: flex; flex-direction: column;">
-          <label for="message" style="margin-bottom: 5px; font-weight: bold;">Message *</label>
-          <textarea id="message" name="message" rows="5" required style="padding: 10px; border: 1px solid #ccc; border-radius: 4px;"></textarea>
-        </div>
-
-        <button type="submit" style="padding: 12px 24px; background-color: #333; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 16px; align-self: flex-start;">Send</button>
-      </form>
+        <style>
+          .custom-form { max-width: 100%; margin: 0 auto; font-family: "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+          .form-group { margin-bottom: 25px; }
+          .main-label { display: block; margin-bottom: 8px; font-weight: 600; color: #000; font-size: 0.9rem; letter-spacing: 0.02em; }
+          .required { font-weight: 400; color: #666; font-size: 0.85rem; }
+          
+          .name-row { display: flex; gap: 20px; }
+          .name-col { flex: 1; }
+          .sub-label { display: block; margin-top: 6px; font-size: 0.75rem; color: #666; font-weight: 400; }
+          
+          .form-control { 
+              width: 100%; 
+              padding: 14px 20px; 
+              border: none; 
+              border-radius: 300px; /* Pill shape */
+              box-sizing: border-box; 
+              background: #fafafa; /* Very light grey */
+              font-family: inherit;
+              font-size: 0.95rem;
+              color: #333;
+          }
+          .form-control:focus { 
+              outline: none; 
+              background: #f0f0f0; 
+          }
+          textarea.form-control {
+              border-radius: 20px; /* Softer corners for textarea */
+              resize: vertical;
+          }
+          .submit-btn { 
+              background-color: #000; 
+              color: white; 
+              padding: 16px 42px; 
+              border: none; 
+              border-radius: 300px; /* Pill shape */
+              cursor: pointer; 
+              font-size: 12px; 
+              font-weight: 700;
+              text-transform: uppercase; 
+              letter-spacing: 0.15em; 
+              transition: opacity 0.2s; 
+              display: block;
+              margin-top: 30px;
+          }
+          .submit-btn:hover { opacity: 0.8; }
+          
+          /* Mobile responsiveness for name fields */
+          @media (max-width: 600px) {
+              .name-row { flex-direction: column; gap: 15px; }
+          }
+        </style>
+      </div>
     </div>
   </div>
 </div></div></div></div>
